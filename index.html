@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <h1 id="title">Eden Bliss Flowershop Survey Form</h1>
+  <p id="description">Help us improve our cafe by filling out this survey.</p>
+  <form id="survey-form" method="post">
+    <fieldset class="info">
+      <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+      <label for="number" id="number-label">Age: <input id="number" type="number" min="7" max="120" placeholder="Enter your age"></label>
+      <label for="city" id="city-label">City: <input id="city" type="text" placeholder="Enter your city"></label>
+      <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
+      </fieldset>
+      <fieldset>
+        <legend> Would you recommend this flowershop to a friend?</legend>
+   <label for="def" class="t"><input type="radio" id="def" checked name="rec" value="1">Definetely</label>
+   <label for="maybe" class="t"><input type="radio" id="maybe" name="rec" value="2">Maybe</label>
+   <label for="ns" class="t"><input type="radio" id="ns" name="rec" value="3">Not sure</label>
+   </fieldset>
+    <fieldset>
+     <label for="dropdown">How did you hear about our flower shop?
+        <select id="dropdown">
+          <option value="">Select</option>
+          <option value="1">Online search</option>
+          <option value="2">Social media</option>
+          <option value="3">Advertisement</option>
+          <option value="4">Other</option>
+          </select>
+        </label>
+        </fieldset>
+      <fieldset><legend>What aspects of our shop do you think can be improved?</legend>
+   <label class="cs"> <input type="checkbox" value="1" checked>Ambiance</label>
+   <label class="cs"><input type="checkbox" value="2">Customer Service</label>
+   <label class="cs"><input type="checkbox" value="3">Interior Design</label>
+   <label class="cs"><input type="checkbox" value="4"> Pricing </label>
+   </fieldset>
+   <fieldset>
+     <label>Any suggestions:<textarea placeholder="Enter your suggestions here:"></textarea></label>
+     <input type="submit" id="submit" value="Submit">
+     </fieldset>
+     </form>
+  </body>
+</html>
